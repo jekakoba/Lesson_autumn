@@ -1,0 +1,205 @@
+/* Шрифт из макета OnlineCourse  */
+@import url(https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap);
+
+/* Шрифт из макета ThriveTalk  */
+@font-face {
+	font-family: "Larsseit";
+	src: url("../fonts/Larsseit.woff2") format("woff2"), url("../fonts/Larsseit.woff") format("woff");
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Larsseit";
+	src: url("../fonts/Larsseit-Medium.woff2") format("woff2"), url("../fonts/Larsseit-Medium.woff") format("woff");
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Larsseit";
+	src: url("../fonts/Larsseit-Bold.woff2") format("woff2"), url("../fonts/Larsseit-Bold.woff") format("woff");
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+}
+
+
+/* Шрифты для статьи */
+@import url(https://fonts.googleapis.com/css?family=Caveat:regular,500,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,italic,500,500italic,700,700italic,900,900italic&display=swap);
+
+@font-face {
+	font-family: "Basique";
+	src: url("../fonts/Basique-Black.woff2") format("woff2"), url("../fonts/Basique-Black.woff") format("woff");
+
+	font-style: normal;
+	font-weight: 900;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Basique";
+	src: url("../fonts/Basique-light.woff2") format("woff2"), url("../fonts/Basique-light.woff") format("woff");
+
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "EastmanAlternate";
+	src: url("../fonts/EastmanAlternate-Extralight.woff2") format("woff2"),
+		url("../fonts/EastmanAlternate-Extralight.woff") format("woff");
+
+	font-style: normal;
+	font-weight: 200;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "EastmanAlternate_italic";
+	src: url("../fonts/EastmanAlternate-LightItalic.woff2") format("woff2"),
+		url("../fonts/EastmanAlternate-LightItalic.woff") format("woff");
+
+	font-style: italic;
+	font-weight: 200;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Lack";
+	src: url("../fonts/Lack-Regular.woff2") format("woff2"), url("../fonts/Lack-Regular.woff") format("woff");
+
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Moloko";
+	src: url("../fonts/cyrillic_font_moloko.woff2") format("woff2"),
+		url("../fonts/cyrillic_font_moloko.woff") format("woff");
+
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "RexBold";
+	src: url("../fonts/RexBold.woff2") format("woff2"), url("../fonts/RexBold.woff") format("woff");
+
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "RexLight";
+	src: url("../fonts/RexLight.woff2") format("woff2"), url("../fonts/RexLight.woff") format("woff");
+
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "FuturaFuturisBlackC";
+	src: url("../fonts/FuturaFuturisBlackC.woff2") format("woff2"),
+		url("../fonts/FuturaFuturisBlackC.woff.woff") format("woff");
+
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+}
+
+body {
+	font-family: "Basique", sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 1.3;
+	color: #251212;
+}
+
+.navigation {
+	font-weight: 900;
+	color: #a200ff;
+	font-size: 30px;
+	text-align: center;
+	text-shadow: 10px 15px 10px rgba(222, 102, 233, 0.4);
+}
+
+.menu {
+	font-family: Caveat, sans-serif;
+	font-weight: 500;
+	font-size: 30px;
+	text-decoration: underline;
+	color: #085325;
+}
+
+.main-title {
+	text-decoration: overline;
+	font-weight: 900;
+	font-size: 40px;
+	line-height: 1.7;
+}
+
+.page {
+	text-align: center;
+}
+
+.title {
+	font-family: RexBold;
+	font-weight: 700;
+	color: #3700ff;
+	font-size: 70px;
+	line-height: 1.5;
+}
+
+.list {
+	color: #9500f8;
+	font-size: 25px;
+	text-align: left;
+	text-transform: uppercase;
+	text-decoration: underline;
+	line-height: 1.8;
+}
+
+.text-left {
+	text-align: left;
+	letter-spacing: 1.5px;
+	word-spacing: 1.3px;
+	font-size: 25px;
+	color: #612121;
+}
+
+.error {
+	text-decoration: line-through;
+}
+
+.up {
+	text-align: left;
+}
+
+.up__link {
+	font-family: RexBold sans-serif;
+	text-align: left;
+	font-weight: 700;
+	font-size: 70px;
+}
+
+.theme {
+	font-family: Moloko;
+	color: red;
+	font-weight: 300;
+	font-size: 30px;
+}
+
+.theme__link {
+	font-family: RexBold;
+	font-weight: 300;
+	text-decoration: underline;
+}
