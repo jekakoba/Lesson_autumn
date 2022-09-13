@@ -1,0 +1,48 @@
+.main-name {
+	color: darkred;
+}
+
+div h3 {
+	color: red;
+}
+
+a {
+	color: deepskyblue;
+}
+
+.info-text span {
+	color: blue;
+}
+
+.info-text>p {
+	color: #e60d0d;
+}
+
+ol>li {
+	color: #0004ff;
+}
+
+.laziness * p {
+	color: gold;
+}
+
+.navigation,
+.laziness {
+	color: lightseagreen;
+}
+
+.glass-text+p {
+	color: lime;
+}
+
+#God {
+	color: #fa0808;
+}
+
+[title="Имя"] {
+	color: red;
+}
+
+.section>li>ol>li {
+	color: blueviolet;
+}
