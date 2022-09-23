@@ -1,0 +1,28 @@
+@font-face {
+	font-family: "Basique";
+	src: url("../fonts/Basique-Black.woff2") format("woff2"), url("../fonts/Basique-Black.woff") format("woff");
+
+	font-style: normal;
+	font-weight: 900;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "RexLight";
+	src: url("../fonts/RexLight.woff2") format("woff2"),
+		url("../fonts/RexLight.woff") format("woff");
+
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "RexBold";
+	src: url("../fonts/RexBold.woff2") format("woff2"),
+		url("../fonts/RexBold.woff") format("woff");
+
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+}

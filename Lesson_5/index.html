@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:500,600&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="css/null.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>CSS свойства блоков</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="container">
+			<header id="up" class="header">
+				<h1 class="main-title"> CSS свойства блоков</h1>
+				<img class="img-evgen" src="img/Listen_to_Zheka.jpg" alt="Фотография нашего гуру по вёрстке">
+				<nav>
+					<ul class="list">
+						<li><a href="#margin">Отступы</a></li>
+						<li><a href="#widtheight">Шириныи высоты</a></li>
+						<li><a href="#excesscontent">Управление переизбытком контента</a></li>
+						<li><a href="#object">Управление типом обьекта</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<main class="page">
+				<div class="margin">
+					<h2 class="title">Свойство Margin</h2>
+					<div id="margin" class="margin-info">
+
+						<p class="margin-text">
+							<mark>Margin</mark> - внешний отступ, который определяет расстояние от границ объекта до
+							других
+							объектов(а)
+							только для блочных объектов
+
+							Значения задаются положительным и отрицательным числом
+							и единицей измерения (px, %, em, rem) <br>
+
+							<span class="attention">Это свойство не наследуется!</span>
+
+						</p>
+						<img class="image-margin" src="img/margin/margin-1.png" alt="Фотография отступа Margin ">
+
+					</div>
+
+					<div class="margin-anatomy">
+						<h3>Анатомия свойства Margin</h3>
+						<div class="margin-parameter">
+							<p class="universal-title">Это сокращение, которое устанавливает все отдельные поля
+								одновременно:
+							</p>
+							<ul>
+								<li><span class="bold">margin-left:50px;</span> - отступ слева</li>
+								<li><span class="bold">margin-right:50px;</span> - отступ слева</li>
+								<li><span class="bold">margin-top:50px;</span> - отступ сверху</li>
+								<li><span class="bold">margin-bottom:50px ;</span> - отступ снизу</li>
+							</ul>
+						</div>
+						<div class="universal-parameter">
+							<div class="universal-parameter__text">
+								<h4 class="universal-title"> Универсальный параметр</h4>
+
+								<p>
+									margin: сверху, справа, снизу, слева;
+									<br> Стрелка часов 12:00↑, 15:00→, 18:00↓, 21:00←;
+								</p>
+
+								<p>
+									Пример: <br>
+									margin: 20px 30px 50px 80px;
+								</p>
+
+								<br>Сокращения:
+
+								<p>
+									margin: 0 0 50px 0;
+									или
+									<mark>margin-bottom: 50px;</mark>
+								</p>
+
+								<p>
+									*Одинаковые значения сверху/снизу20px, слева/справа50px
+									<mark>margin: 20px 50px;</mark>
+								</p>
+
+								<p>
+									*сверху 20px снизу 40px слева/справа 50px <br>
+									<mark>margin: 20px 50px 40px;</mark>
+								</p>
+
+								<p>
+									Все значения равны <br>
+									сверху/снизу слева/справа 50px
+									margin: 50px;
+								</p>
+							</div>
+
+
+						</div>
+						<img class="imgae-margin-2" src="img/margin/margin.jpg" alt="Фотография отступов ">
+					</div>
+
+					<div class="negative-margin">
+						<h3>Отрицательный margin</h3>
+						<div class="block-1">
+
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <mark>margin-left:
+									-20px;</mark>
+								<span class="white-text">Уехал за пределы родителя на 20 пикселей влево</span>
+								fugit quam
+								natus
+								magni impedit, expedita perferendis culpa placeat inventore?Lorem ipsum dolor sit amet,
+								consectetur adipisicing elit. Reiciendis quaerat fugit quam natus
+								magni impedit, expedita perferendis culpa placeat inventore?
+							</p>
+
+						</div>
+						<div class="block-2">
+							<p><mark> margin-top:-40px;</mark> <br> Пример действия отрицательного margin. <br> Этот
+								блок
+								надвинулся на блок,
+								который сверху на 40px, тем самым потащил за собой все нижние блоки за собой </p>
+						</div>
+						<div class="block-3">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <mark>margin-right:
+									-40px;</mark>
+								<span class="white-text">Уехал за пределы родителя на 40 пикселей вправо</span>
+								quam natus
+								magni impedit, expedita perferendis culpa placeat inventore?Lorem ipsum dolor sit amet,
+								consectetur adipisicing elit. Reiciendis quaerat fugit quam natus
+								magni impedit, expedita perferendis culpa placeat inventore?
+							</p>
+						</div>
+					</div>
+
+					<div class="alignment">
+						<h3>Выравнивание блочных элементов с помощью Margin</h3>
+						<p class="alignment-text">
+							Существует известный трюк, позволяющий выровнять блочный элемент по центру родителя, слева,
+							справа с помощью внешних отступов.
+						</p>
+
+
+						<ul class="alignment-list">
+							<li>Объект должен быть блочным</li>
+							<li>Объект должен быть Уже чем родитель </li>
+							<li>Объекту задано выравнивание</li>
+						</ul>
+
+						<p class="alignment-text">Для этого необходимо задать ширину самому обьекту и установить для
+							определенной стороны значение auto
+						</p>
+
+						<div class="alignment-example">
+							<div class="block1">
+								<mark>block-1:</mark> {
+								width: 500px; <br> (указана ширина обьека) <br>
+								<mark>margin-left: auto;</mark> ( максимально отталкивается от левой стороны на всё
+								свободное
+								пространство
+								}
+							</div>
+							<div class="block2">
+								<mark>block-2:</mark> {
+								width: 400px; <br> (указана ширина обьека) <br>
+								<mark>margin-right: auto; </mark>( максимально отталкивается от правой стороны на всё
+								свободное
+								пространство
+								}
+							</div>
+							<div class="block3">
+								<mark>block-3:</mark> {
+								width: 350px; <br> (указана ширина обьека) <br>
+								<mark>margin: 0 auto;</mark> (отступ сверху/снизу 0px а слева и справа пространство
+								распределяется
+								равномерно. Обьект выстраивается по центру родительсого блока.
+								}
+							</div>
+							<img class="img-alignment" src="img/margin/alignment.jpg" alt="Выравнивание блочных элементов ">
+						</div>
+
+					</div>
+					<div class="collapse-margin">
+						<h3>Схлопывание (наложение) Margin</h3>
+						<p class="collapse-text">Отступы margin-top и margin-bottom иногда объединяются в один, с
+							размером
+							равным наибольшему из
+							них (или размеру одного, если они равны).</p>
+						<img class="img-collapse" src="img/margin/margin-collapse.png" alt="Схема схлопывания Margin">
+					</div>
+				</div>
+
+				<div class="padding">
+					<h2 class="title">Свойство Padding</h2>
+					<div class="padding-info">
+						<div class="padding-text">
+							<p>
+								<mark>Padding</mark> - внутренний отступ, который определяет расстояние от границ
+								объекта до ЕГО содержимого Значения задаются положительным числом и единицей измерения
+								(px, %, em, rem)
+								<span class="attention ">Это свойство не наследуется!</span> <br>
+								<span class="attention ">Только для блочных объектов</span>
+							</p>
+						</div>
+
+						<img class="image-padding" src="img/padding/padding.png" alt="Фотография схемы внутреннего отступа">
+					</div>
+
+					<div class="padding-anatomy">
+						<h3>Анатомия свойства Margin</h3>
+						<p class="padding-attention">АБCОЛЮТНО ТАКАЯ ЖЕ, КАК И В MARGIN!</p>
+					</div>
+
+				</div>
+
+				<div class="width-and-height">
+					<h2 id="widtheight" class="title">Ширины и высоты</h2>
+					<div class="width-and-height__inner">
+						<div class=" width-and-height__info">
+							<p>Задаются числом и единицой (px, %, em, rem) <br>
+								<span class="attention">НЕ работает для СТРОЧНЫХ тегов !!</span>
+							</p>
+						</div>
+
+
+						<div class="width-and-height__text-width">
+							<h4 class="universal-title">Ограничители ширины</h4>
+							<p>
+								<span class="bold">max-width: 300px; </span>— Не шире чем
+								<span class="bold">min-width: 300px;</span> — Не УЖЕ чем
+								<span class="bold">width: 50%;</span> — Проценты от ширины родителя <br>
+								<mark>
+									width: 300px; —Конкретная ширина
+									height: 300px;— Конкретная высота
+								</mark>
+							</p>
+						</div>
+						<div class="width-and-height__text-height">
+							<h4 class="universal-title">Ограничители высоты</h4>
+							<p>
+								<span class="bold">max-height: 300px;</span> — Не больше по высоте чем
+								<span class="bold">min-height: 300px;</span> — Не больше по высоте чем
+								<span class="bold">height: 50%;</span> —Проценты от высоты родителя
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="excess">
+					<h3 id="excesscontent" class="title">УПРАВЛЕНИЕ ПЕРЕИЗБЫТКОМ КОНТЕНТА</h3>
+					<p class="excess__text">
+						Свойство CSS <mark>overflow</mark> определяет, необходимо ли для переполненного блочного
+						элемента содержимое
+						обрезать, предоставить полосы прокрутки или просто отобразить.
+						<span class="attention">
+							Применяется только для блочных обьектов!
+							Свойство не наследуется!
+						</span>
+					</p>
+					<div class="value">
+						<p class="visible">
+							<mark>visible (значение по умолчанию)</mark> - отображается всё содержание элемента, даже за
+							пределами установленной высоты и ширины
+						</p>
+						<div class="scroll">
+							<div class="excess__title">
+								<mark>scroll</mark> Всегда добавляются полосы прокрутки.
+							</div>
+							<div class="scroll__example">
+								<div class="scroll__text">
+									<p>
+										Мегаполисы слишком опасны. Любым путем раздобудьте транспортное средство и
+										отправляйтесь в провинцию. Лучше всего — город с населением около сотни тысяч
+										человек. Убежище должно быть просторным, неприметным, с хорошо
+										просматривающимися
+										подходами и удобными путями для отступления.
+									</p>
+									<p>
+										Искать его следует в окраинных промышленных районах, исключая вредные
+										производства,
+										ведь бесхозные химзаводы могут оказаться не менее опасными, чем атомные бомбы.
+										Нас
+										интересуют кирпичные или панельные здания (заброшенные ангары, недостроенные
+										цеха),
+										а также подземные помещения. Селиться желательно вдали от складов, на
+										непроизводственных площадях — они вряд ли привлекут мародеров, а
+										электромеханическое
+										оборудование, топливо и газ можно будет найти по соседству.
+									</p>
+
+									<p>В любом случае, в одиночку вам не выжить. Чем многочисленнее и сплоченнее ваш
+										коллектив, тем лучше. Идеальный вариант — создать «ядро» из семьи и ближайших
+										друзей, усилив его молодыми, здоровыми, спокойными и неглупыми мужчинами. Очень
+										важно, чтобы авторитет лидера не вызывал сомнений и при попытке мятежа защищался
+										большинством членов коллектива.
+									</p>
+									<img class="img-stallker" src="img/stallker.jpg" alt="Фотография выжившего " width="700" height="300">
+								</div>
+							</div>
+						</div>
+						<div class="hidden">
+							<div class="excess__title">
+								<mark>hidden</mark> - Отображается только область внутри элемента,
+								остальное будет скрыто.
+							</div>
+							<div class="hidden__example">
+								<p>Охотничьи магазины (спортивные школы, отделения милиции) представляют гораздо больший
+									интерес, чем универмаги или автомастерские. Учтите, что почти все оружие и
+									боеприпасы хранятся в сейфах. Универмаги и мастерские были упомянуты не зря. Там
+									можно найти необходимые инструменты и при наличии определенных слесарных навыков
+									быстро завладеть главными аргументами в борьбе за выживание.
+								</p>
+								<p>
+									Обеспечив себя оружием и патронами, необходимо начать копить горючие материалы.
+									Топливо для зажигалок и крепкое спиртное в магазинах, бензобаки автомобилей,
+									хранилища транспортных предприятий — от всего этого напрямую зависит ваше
+									благополучие. Бензоколонки вряд ли помогут. Для их работы требуется электричество.
+								</p>
+							</div>
+						</div>
+						<div class="auto">
+							<div class="excess__title">
+								<mark>auto </mark>- Полосы прокрутки добавляются только при необходимости
+							</div>
+							<div class="auto__example">
+								<p>Периодически наведывайтесь в аптеки. Лекарства, витамины, спирт, бинты, простейшие
+									медицинские инструменты — все это должно быть ваше. Замечательную начинку для адских
+									машин можно изготовить из таких вещей, как бензин, масло, хозяйственное мыло,
+									алюминиевая пудра, нашатырный спирт, йод, марганцовка, глицерин и аммиачная селитра.
+								</p>
+
+								<p>Все вещи, которые вы соберете, будут лакомой добычей для других выживших. Во время
+									перевозки грузов не привлекайте к себе внимания. Убедитесь, что за вами не следят, и
+									лишь тогда приближайтесь к убежищу. Как реагировать на просьбы о помощи — решайте
+									сами, но учтите, что каждый недееспособный иждивенец сделает вашу жизнь сложнее.
+								</p>
+
+								<p>
+									Позаботьтесь о надежных дверях и запорах для убежища. Сделайте толстые заслонки на
+									окна, чтобы ночью из них не проникал свет (на всякий случай помните о том, что
+									лампочка в 100 ватт, закрытая трехмиллиметровой фанерой, обнаруживается прибором
+									ночного видения с расстояния в 1 километр). Придайте прилегающей территории
+									заброшенный вид. Ликвидируйте все возвышения, по которым можно забраться к вам на
+									крышу или перелезть через стену. Выделите несколько человек на круглосуточную охрану
+									убежища, организуйте усиленные дежурства по ночам.
+
+								</p>
+
+								<p>
+									В темноте нелишней будет простейшая «сигнализация» — веревки с банками и бутылками,
+									натянутые на подступах к убежищу. Держите наготове огнетушители (лучше всего
+									порошковые). Капканы и ловушки, расставленные снаружи, могут защитить вас не хуже
+									винтовок, а дерево, поваленное на дорогу, способно помешать внезапному
+									«кавалерийскому наскоку» вражеских транспортных средств. Все взрослые должны быть
+									вооружены как минимум холодным оружием.
+								</p>
+								<p>
+									В большинстве случаев ваше первое убежище окажется лишь перевалочным пунктом.
+									Запасайтесь необходимым, привыкайте к жизни в условиях естественного отбора, учитесь
+									стрелять. Пока ситуация не накалилась до предела, вы должны успеть разведать место,
+									пригодное для постоянного обитания: удаленное на 25-30 километров и более
+									(расстояние суточного перехода) от городов и поселков, промышленных объектов,
+									опасных ландшафтов — мест схода лавин или селей, землетрясений, наводнений, но рядом
+									с проточными водными объектами и крупными лесными массивами.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="object-management">
+					<h2 id="object" class="title">УПРАВЛЕНИЕ ТИПОМ ОБЬЕКТА</h2>
+					<div class="object-management__text">
+						Свойство <mark>display</mark> — многоцелевое свойство, которое определяет, как элемент должен
+						быть показан в документе
+						<span class="attention">
+							<br>
+							Свойство не наследуется.
+						</span>
+					</div>
+					<h3>
+						Значения свойства display
+					</h3>
+					<div class="block-example">
+						<p><mark>block </mark>- Элемент показывается как блочный. Применение этого значения для
+							встроенных элементов,
+							например тега <mark>span,</mark> заставляет его вести подобно блокам — происходит перенос
+							строк в
+							начале и в конце содержимого.
+						</p>
+					</div>
+					<div class="inline-example">
+						<p class="inline-example__text">
+							<mark>inline-</mark> Элемент отображается как встроенный. Использование блочных тегов, таких
+							как
+							<mark>div</mark> и <mark>p, </mark>автоматически создает перенос и показывает содержимое
+							этих тегов с новой строки. <mark>Значение inline</mark> отменяет эту особенность,
+							поэтому содержимое
+							блочных элементов начинается с того места, где окончился предыдущий элемент.
+						</p>
+
+						<div class="inline-blocks">
+							<div class="inline-block1">а я уже строчный</div>
+							<div class="inline-block2">так и я тоже</div>
+							<div class="inline-block3">а обо мне уже и забыли?</div>
+							<div class="inline-block4">подождите и меня</div>
+						</div>
+					</div>
+					<div class="inline-block-example">
+						<p class="inline-block-example__text">
+							<mark>inline-block</mark> — Это значение генерирует блочный элемент, который обтекается
+							другими
+							элементами веб-страницы подобно встроенному элементу. Фактически такой элемент по своему
+							действию похож на встраиваемые элементы <mark>(вроде тега img)</mark>. При этом его
+							внутренняя
+							часть форматируется как блочный элемент, а сам элемент — как встроенный.
+						</p>
+						<div class="inline-block">
+							<span class="gibrid">я строчный</span>
+							<span class="gibrid">но имею</span>
+							<span class="gibrid">важные свойства</span>
+							<span class="gibrid">блока </span>
+						</div>
+					</div>
+
+					<div class="none">
+						none - Временно удаляет элемент из документа. Занимаемое им место не резервируется и
+						веб-страница формируется так, словно элемента и не было.
+					</div>
+				</div>
+			</main>
+
+			<footer class="footer">
+				<a href="#up">
+					<img src="img/up.png" alt="Подняться вверх">
+				</a>
+			</footer>
+		</div>
+	</div>
+
+</body>
+
+</html>
