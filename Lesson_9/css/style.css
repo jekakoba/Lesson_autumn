@@ -1,0 +1,9 @@
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+[class*="__container"] {
+	max-width: 810px;
+	margin: 0 auto;
+}
