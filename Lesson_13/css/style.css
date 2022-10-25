@@ -1,0 +1,691 @@
+[class*="__container"] {
+	max-width: 1600px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+body {
+	background: linear-gradient(180deg, rgba(0, 161, 238, 1) 0%, rgba(255, 255, 255, 0.639093137254902) 78%);
+
+}
+
+.home {
+	padding-top: 200px;
+	font-size: 0;
+}
+
+.house {
+	display: inline-block;
+	position: relative;
+	width: 700px;
+	height: 450px;
+	margin-right: auto;
+	background: rgb(241, 96, 5);
+	background: linear-gradient(180deg, rgba(241, 96, 5, 1) 0%, rgba(255, 165, 0, 1) 82%);
+	border: 1px solid black;
+	border-bottom: none;
+	z-index: 2;
+}
+
+
+/*=========================clouds ======================= */
+
+
+.cloud {
+	position: absolute;
+
+}
+
+.cloud_1 {
+	left: 0;
+	top: 0;
+	animation: cloud 50s ease alternate infinite;
+}
+
+.cloud_2 {
+	left: 20%;
+	top: 0;
+	animation: cloud 45s ease alternate infinite;
+}
+
+.cloud_3 {
+	left: 50%;
+	top: 0;
+	animation: cloud 30s ease alternate infinite;
+}
+
+.cloud_4 {}
+
+@keyframes cloud {
+	0% {
+		transform: translate(0%);
+	}
+
+
+
+	100% {
+		transform: translate(100%);
+	}
+}
+
+
+.tree {
+	position: absolute;
+	z-index: 1;
+	top: -110%;
+	right: -17%;
+}
+
+.roof__antenna {
+	position: absolute;
+	right: -160%;
+	top: -6%;
+	z-index: 5;
+}
+
+.roof__smoker {
+	position: absolute;
+	left: -7%;
+	top: -44%;
+	z-index: 5;
+}
+
+
+.house__line {
+	position: absolute;
+	width: 100%;
+	height: 30px;
+	background-color: rgb(223, 217, 217);
+	z-index: 2;
+	top: 8%;
+	left: 0;
+	z-index: 1;
+	box-shadow: inset 0px -2px 5px black;
+}
+
+/*=========================roof======================= */
+
+.house__roof {
+	position: absolute;
+	top: -30px;
+	left: 0;
+	width: 300px;
+	height: 200px;
+	perspective: 800px;
+	perspective-origin: 335px -205px;
+	z-index: 2;
+}
+
+.roof__body {
+
+	width: 700px;
+	height: 100px;
+	background: url(../img/roof.png) 0 0 repeat;
+	transform: perspective(190px) rotateX(28deg);
+	border-radius: 5%;
+	position: absolute;
+	top: -25px;
+	border: 2px solid #000
+}
+
+/*========================= window-top======================== */
+
+
+
+.house__top-windows {
+	top: 18%;
+	position: relative;
+	width: 100%;
+	height: 150px;
+}
+
+.house__top-window {
+	overflow: hidden;
+	position: absolute;
+	background-color: white;
+	width: 250px;
+	height: 105px;
+	border: 5px solid rgb(35, 13, 2);
+	z-index: 3;
+}
+
+.line-big {
+	transform: rotate(90deg);
+	position: absolute;
+	left: 30%;
+	top: 46%;
+	width: 100px;
+	height: 13px;
+	background-color: rgb(35, 6, 6);
+}
+
+
+.house__top-window_left {
+	left: 3%;
+	background: url(../img/bart.jpg) 0 0 / contain no-repeat;
+}
+
+.house__top-window_left:hover .furniture-closed {
+	display: none;
+}
+
+
+
+.house__top-window_right {
+	right: 3%;
+	background: url(../img/giphy.gif) -10px -20px / cover no-repeat;
+}
+
+
+/*=========================bottom-windows======================== */
+
+.house__bottom-windows {
+	top: 28%;
+	position: relative;
+	width: 100%;
+	height: 150px;
+}
+
+
+.house__bottom-window {
+	position: absolute;
+	background-color: white;
+	width: 200px;
+	height: 160px;
+	border: 5px solid rgb(35, 13, 2);
+	z-index: 3;
+}
+
+.house__bottom-window_left {
+	left: 7%;
+	background: url(../img/simps.jpg) 0 30px / cover no-repeat;
+
+}
+
+.house__bottom-window_left::before {
+	content: "";
+	position: absolute;
+	display: inline-block;
+	background: rgb(35, 6, 6);
+	background: linear-gradient(180deg, rgba(35, 6, 6, 1) 33%, rgba(0, 0, 0, 1) 92%);
+	width: 216px;
+	height: 82px;
+	top: -28%;
+	left: -7%;
+	z-index: 5;
+	border-radius: 41% 41% 26% 26% / 53% 53% 0% 0%;
+}
+
+.house__bottom-window_right {
+	right: 7%;
+	background: url(../img/kitchen.jpg) -35px 15px / cover no-repeat;
+
+}
+
+.house__bottom-window_right::after {
+	content: "";
+	position: absolute;
+	top: 4%;
+	left: -2%;
+	width: 199px;
+	border: none;
+	height: 34px;
+	display: inline-block;
+	z-index: 5;
+	background: rgba(0, 0, 0, 1);
+	animation: right-window 10s linear infinite;
+
+}
+
+@keyframes right-window {
+	0% {
+		height: 34px;
+	}
+
+	50% {
+		height: 145px;
+	}
+
+	75% {
+		height: 145px;
+	}
+
+	100% {
+		height: 0px;
+	}
+
+
+}
+
+.house__bottom-window_right::before {
+	content: "";
+	position: absolute;
+	display: inline-block;
+	background: rgb(35, 6, 6);
+	background: linear-gradient(180deg, rgba(35, 6, 6, 1) 33%, rgba(0, 0, 0, 1) 92%);
+	width: 216px;
+	height: 82px;
+	top: -28%;
+	right: -7%;
+	z-index: 5;
+	border-radius: 41% 41% 26% 26% / 53% 53% 0% 0%;
+}
+
+/*========================= lines ======================== */
+
+
+
+.line {
+	position: absolute;
+	width: 100%;
+	height: 5px;
+	z-index: 2;
+	background-color: rgb(35, 6, 6);
+}
+
+
+.line_1 {
+	transform: rotate(90deg);
+	width: 125px;
+	left: -29%;
+	top: 59%;
+}
+
+
+
+.line_3 {
+	transform: rotate(90deg);
+	width: 125px;
+	left: -7%;
+	top: 59%;
+}
+
+.line_4 {
+	transform: rotate(90deg);
+	width: 125px;
+	left: 16%;
+	top: 59%;
+}
+
+
+.line_6 {
+	transform: rotate(90deg);
+	width: 125px;
+	left: 41%;
+	top: 59%;
+}
+
+
+.line_9 {
+	transform: rotate(90deg);
+	width: 125px;
+	left: 62%;
+	top: 59%;
+}
+
+/*============================= Door=========================== */
+
+.house__dorr {
+	position: absolute;
+	left: 43%;
+	top: 55%;
+	width: 115px;
+	height: 200px;
+	background-color: brown;
+	border: 5px solid purple;
+	border-radius: 42% 42% 25% 25% / 51% 51% 0% 0%;
+
+}
+
+.dorr-key {
+	position: absolute;
+	left: 6%;
+	top: 55%;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 1px solid white;
+	background-color: black;
+}
+
+.dorr-key::before {
+	content: "";
+	z-index: 10;
+	position: absolute;
+	left: -20%;
+	top: 130%;
+	width: 100%;
+	height: 100%;
+	background: url(../img/key-door.png) 100% / contain no-repeat;
+
+}
+
+
+/*=============================Seocond house=========================== */
+
+.second-house {
+	display: inline-block;
+	position: relative;
+
+}
+
+.second-house__roof {
+	position: relative;
+	z-index: 1;
+	width: 447px;
+	height: 370px;
+	background: rgb(241, 96, 5);
+	background: linear-gradient(142deg, rgba(241, 96, 5, 1) 0%, rgba(255, 165, 0, 1) 63%);
+	border: 1px solid black;
+	border-left: none;
+	border-bottom: none;
+}
+
+.roof_second {}
+
+
+.roof__body_second {
+	width: 476px;
+	height: 100px;
+	background: url(../img/roof.png) 0 0 repeat;
+	transform: perspective(190px) rotateX(28deg);
+	border-radius: 5%;
+	position: absolute;
+	left: -8%;
+	top: -16%;
+	border: 2px solid #000
+}
+
+/*=========================signals ======================= */
+
+
+.signals {
+	position: absolute;
+	z-index: 10;
+	width: 500px;
+	height: 200px;
+	top: -75%;
+	right: 0;
+	transform: rotate(-30deg);
+
+}
+
+.signal {
+	position: absolute;
+	transform: rotate(60deg);
+
+
+}
+
+
+.signal_1 {
+	top: 59%;
+	left: 9%;
+	animation: signal-1 2s linear infinite;
+}
+
+.signal_2 {
+	top: 51%;
+	left: 17%;
+	animation: signal-2 2s linear infinite;
+}
+
+.signal_3 {
+	top: 43%;
+	left: 25%;
+	animation: signal-3 2s linear infinite;
+}
+
+@keyframes signal-1 {
+	0% {
+		top: 59%;
+		left: 9%;
+		opacity: 0;
+	}
+
+	50% {
+		top: 51%;
+		left: 17%;
+		opacity: 0.5;
+	}
+
+	100% {
+		top: 43%;
+		left: 25%;
+		opacity: 0;
+	}
+}
+
+@keyframes signal-2 {
+	0% {
+		top: 51%;
+		left: 17%;
+		opacity: 0;
+	}
+
+
+
+	50% {
+		top: 43%;
+		left: 25%;
+		opacity: 0.5;
+	}
+
+	100% {
+		top: 35%;
+		left: 33%;
+		opacity: 0;
+	}
+}
+
+@keyframes signal-3 {
+	0% {
+		top: 43%;
+		left: 25%;
+		opacity: 0;
+	}
+
+
+
+	50% {
+		top: 35%;
+		left: 33%;
+		opacity: 0.5;
+	}
+
+	100% {
+		top: 27%;
+		left: 41%;
+		opacity: 0;
+	}
+}
+
+
+/*=============================garage=========================== */
+
+.garage {
+	border: 1px solid black;
+	border-top: none;
+	border-bottom: none;
+	width: 361px;
+	height: 252px;
+	background-color: #ffa500;
+	position: absolute;
+	left: 8%;
+	top: 34%;
+	z-index: 12;
+
+}
+
+.garage::before {
+	content: "";
+	position: absolute;
+	width: 57px;
+	height: 50px;
+	top: -5%;
+	left: 40%;
+	z-index: 4;
+	background: url(../img/window.png) 100% / contain no-repeat;
+}
+
+.garage::after {
+	content: "";
+	position: absolute;
+	background-color: rgb(114, 65, 65);
+	width: 41px;
+	height: 50px;
+	top: -5%;
+	left: 45%;
+	z-index: 3;
+
+}
+
+.garage__line {}
+
+.line-garage {
+	position: absolute;
+	width: 307px;
+	height: 50px;
+	background-color: rgb(35, 13, 2);
+
+}
+
+.line-garage_left {
+	left: -26%;
+	top: -17%;
+	transform: rotate(328deg);
+	box-shadow: 8.5px 10px 10.5px -4px #230d02;
+}
+
+.line-garage_right {
+	right: -25%;
+	top: -16%;
+	transform: rotate(-328deg);
+	box-shadow: -8.5px 10px 10.5px -4px #230d02;
+}
+
+/*=============================gates=========================== */
+
+
+
+.garage__gates {
+	position: absolute;
+	left: 11%;
+	top: 22%;
+	width: 280px;
+	height: 196px;
+	border-bottom: none;
+	box-shadow: inset -1px 0 8px 4px #cc8203;
+
+}
+
+.line-gates {
+	position: absolute;
+	width: 100%;
+	height: 5px;
+	background-color: #cc8203;
+
+}
+
+.line-gates_1 {
+	left: 0;
+	top: 34%;
+}
+
+.line-gates_2 {
+	left: 0;
+	top: 68%;
+}
+
+.line-gates_2::before {
+	content: "";
+	position: absolute;
+	top: 200%;
+	left: 36%;
+	width: 70px;
+	height: 10px;
+	background-color: rgb(202, 64, 9);
+}
+
+/*=============================grass=========================== */
+.grass {
+	position: relative;
+	width: 300px;
+	height: 200px;
+	perspective: 800px;
+	perspective-origin: 335px -205px;
+	z-index: 10;
+}
+
+.grass__body {
+	position: absolute;
+	top: -12%;
+	left: -79%;
+	width: 1613px;
+	height: 208px;
+	background: url(../img/gazon.jpg) 0 0 repeat;
+	transform: perspective(190px) rotateX(28deg);
+	border-radius: 5%;
+
+}
+
+.doroga {
+	position: absolute;
+}
+
+.doroga_1 {
+	top: 0;
+	right: 11%;
+	width: 358px;
+	height: 209px;
+	background-color: grey;
+	border: 1px solid black;
+}
+
+.doroga_2 {
+	top: 25%;
+	right: 33%;
+	width: 470px;
+	height: 51px;
+	background-color: grey;
+	border: 1px solid black;
+	border-right: none;
+	border-left: none;
+
+}
+
+.doroga_3 {
+	top: -1%;
+	right: 62%;
+	width: 150px;
+	height: 105px;
+	background-color: grey;
+	border: 1px solid black;
+	border-right: none
+}
+
+
+/*=============================shrub=========================== */
+.shrub {
+	position: absolute;
+}
+
+.shrub_1 {
+	left: 80%;
+	top: -23%;
+}
+
+.shrub_2 {
+	left: -4%;
+	top: -34%;
+}
+
+.shrub_3 {
+	left: 135%;
+	top: -23%;
+}
+
+.shrub_4 {
+	left: 210%;
+	top: -47%;
+}
