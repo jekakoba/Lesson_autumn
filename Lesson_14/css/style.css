@@ -1,0 +1,163 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap);
+
+body {
+	font-size: 20px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	overflow: hidden;
+}
+
+[class*="__container"] {
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.wrapper>main {
+	flex-grow: 1;
+	background-color: azure;
+
+}
+
+.heading {
+	text-align: center;
+	padding: 20px;
+	font-weight: 900;
+	color: white;
+}
+
+.page {
+	padding: 100px 0;
+}
+
+.header {
+	background-color: blue;
+
+}
+
+.footer {
+	background-color: rgb(255, 89, 0);
+
+}
+
+/*==========================================================================================================*/
+
+.example {
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+}
+
+
+
+/*=========================================block__items==========================================*/
+
+.block__items {
+	background-color: grey;
+	display: flex;
+	flex-wrap: wrap;
+	/*за замовчуванням*/
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: stretch;
+
+}
+
+.block__items-center {
+	min-height: 150px;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.block__items_space-between {
+	justify-content: space-between;
+}
+
+.block__items_self {
+	min-height: 250px;
+}
+
+.block__items_space-around {
+	justify-content: space-around;
+}
+
+.block__items_space-evenly {
+	justify-content: space-evenly;
+}
+
+.block__items_flex-end {
+	justify-content: flex-end;
+}
+
+.block__items_center {
+	justify-content: center;
+}
+
+.block__items_row-reverse {
+	flex-direction: row-reverse;
+}
+
+
+.block__items_column {
+	flex-direction: column;
+}
+
+.block__items_column-reverse {
+	flex-direction: column-reverse;
+
+}
+
+.block__items_gap {
+	row-gap: 10px;
+	column-gap: 30px;
+}
+
+/*=====================================block__item=====================================================*/
+
+.block__item {
+	font-size: 25px;
+	background-color: rgb(8, 90, 158);
+	padding: 20px;
+	border: 3px solid rgb(238, 83, 88);
+	color: white;
+	font-weight: 700;
+}
+
+.block__item_auto {
+	flex: 1 1 auto;
+}
+
+.block__item_self-start {
+	align-self: flex-start;
+}
+
+.block__item_self-end {
+	align-self: flex-end;
+}
+
+.block__item_self-center {
+	align-self: center
+}
+
+.block__item_basis {
+	flex-basis: 600px;
+}
+
+.block__item_al-start {
+	align-self: flex-start;
+}
+
+.block__item_al-center {
+	align-self: center;
+}
+
+.block__item_al-end {
+	align-self: flex-end;
+}
