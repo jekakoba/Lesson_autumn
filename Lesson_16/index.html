@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/null.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 16</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="#" class="header__logo">
+					<img src="img/logo.svg" alt="logo">
+				</a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="" class="menu__link">About Us</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Courses</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Events</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Blog</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Contacts</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__actions actions">
+					<a href="#" class="actions__button button"><span>Get consultation</span></a>
+					<div class="actions__users user">
+						<!--Якщо це буде посилання на модальне вікно, то тег був би button з типом "button" -->
+						<a href="#" class="user__login"> <span>Log in /</span></a>
+						<a href="#" class="user__register"> <span>Register</span></a>
+					</div>
+
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__practice-form form-practice">
+				<div class="form-practice__container">
+					<div class="form-practice__title title-header">
+						<div class="title-header__label">Form practice</div>
+						<h2 class="title-header__name">Form</h2>
+					</div>
+					<div class="form-practice__form">
+						<!-- Щоб перевірити запит з цієї форми треба прибрати enctype="multipart/form-data"  -->
+						<form class="form" method="POST" action="https://jsonplaceholder.typicode.com/posts">
+							<div class="form__line">
+								<label for="name-1" class="form__label label-name">Введіть ім'я<span>*</span></label>
+								<input id="name-1" class="form__input" required placeholder="Введіть ім'я" type="text" name="name">
+							</div>
+							<div class="form__line">
+								<label for="password-1" class="form__label label-name">Введіть пароль<span>*</span></label>
+								<input id="password-1" class="form__input" required placeholder="Введіть пароль" type="password" name="password">
+							</div>
+							<div class="form__line">
+								<label for="email-1" class="form__label label-name">Введіть e-mail<span>*</span></label>
+								<input id="email-1" class="form__input" required placeholder="Введіть e-mail" type="email" name="email">
+							</div>
+							<div class="form__line">
+								<label for="phone-1" class="form__label label-name">Введіть номер телефону<span>*</span></label>
+								<input id="phone-1" class="form__input" required placeholder="Введіть номер телефону" type="number" name="number-phone">
+							</div>
+							<div class="form__line">
+								<label class="form__label label-name" for="city">Виберіть своє місто</label>
+								<select class="form__select" name="cities" id="city">
+									<option value="Kyiv">Київ</option>
+									<option value="Odesa">Одеса</option>
+									<option selected value="Mykolayiv">Миколаїв</option>
+									<option value="Kharkiv">Харків</option>
+									<option value="Lviv">Львів</option>
+								</select>
+							</div>
+							<div class="form__line">
+								<div class="radio">
+									<p class="radio__title label-name">Ваша стать <span>*</span></p>
+									<div class="radio__line">
+										<input class="radio__input" checked required type="radio" name="gender" id="woman">
+										<label class="radio__label" for="woman">Чоловіча
+										</label>
+									</div>
+									<div class="radio__line">
+										<input class="radio__input" type="radio" name="gender" id="male">
+										<label class="radio__label" for="male">Жіноча</label>
+									</div>
+								</div>
+							</div>
+							<div class="form__line">
+								<div class="checkbox">
+									<p class="checkbox__title label-name">Ваше хоббі</p>
+									<div class="checkbox__line">
+										<input class="checkbox__input" type="checkbox" value="yes" name="reading" id="reading">
+										<label class="checkbox__label" for="reading">Література</label>
+									</div>
+									<div class="checkbox__line">
+										<input class="checkbox__input" type="checkbox" value="yes" name="Travel" id="Travel">
+										<label class="checkbox__label" for="Travel">Подорожі</label>
+									</div>
+									<div class="checkbox__line">
+										<input class="checkbox__input" type="checkbox" value="yes" name="Sport" id="Sport">
+										<label class="checkbox__label" for="Sport">Спорт</label>
+									</div>
+									<div class="checkbox__line">
+										<input class="checkbox__input" type="checkbox" value="yes" name="music" id="music">
+										<label class="checkbox__label" for="music">Музика</label>
+									</div>
+									<div class="checkbox__line">
+										<input class="checkbox__input" type="checkbox" value="yes" name="Fishing" id="Fishing">
+										<label class="checkbox__label" for="Fishing">Рибалка</label>
+									</div>
+								</div>
+							</div>
+							<div class="form__line">
+								<div class="switcher">
+									<p class="switcher__title label-name">Для гарного настрою</p>
+									<input id="switcher" class="switcher__input" required type="checkbox" name="good-mood">
+									<label for="switcher" class="switcher__label label-name"></label>
+								</div>
+							</div>
+							<div class="form__line">
+								<label class="form__label label-name" for="description">Опишіть себе</label>
+								<textarea class="form__area" name="message" placeholder="Максимум 200 символів" maxlength="200" id="description"></textarea>
+							</div>
+							<div class="form__line">
+								<div class="file">
+									<p class="file__title label-name">Прикрепіть свої фотки</p>
+									<input id="photos" class="file__input" accept="image/png, image/jpeg" multiple type="file" name="photos">
+									<label class="file__label label-name" for="photos">Вибрати свої фотки</label>
+								</div>
+							</div>
+							<button class="form__button button" type="submit"> <span>Відправити форму</span></button>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="page__questions questions">
+				<div class="questions__container">
+					<div class="questions__body">
+						<div class="questions__image">
+							<img src="img/questions/photo.svg" alt="photo 3">
+						</div>
+						<div class="questions__content">
+							<div class="questions__title title-header">
+								<div class="title-header__label">Any questions?</div>
+								<h2 class="title-header__name">Drop us a line</h2>
+							</div>
+							<form class="questions-form form-questions" method="post" action="https://jsonplaceholder.typicode.com/posts">
+								<div class="form-questions__block-inputs">
+									<div class="form-questions__line">
+										<label class="form-questions__label" for="first-name">First Name*</label>
+										<input class="form-questions__input" id="first-name" autocomplete="off" placeholder="Your first name" required name="first-name" type="text">
+									</div>
+									<div class="form-questions__line">
+										<label class="form-questions__label" for="last-name">Last Name*</label>
+										<input class="form-questions__input" id="last-name" autocomplete="off" placeholder="Your last name" required name="last-name" type="text">
+									</div>
+									<div class="form-questions__line">
+										<label class="form-questions__label" for="email-2">Email*</label>
+										<input class="form-questions__input" id="email-2" autocomplete="off" placeholder="Your working email" required name="email-2" type="email">
+									</div>
+									<div class="form-questions__line">
+										<label class="form-questions__label" for="number-2">Phone</label>
+										<input class="form-questions__input" id="number-2" autocomplete="off" placeholder="Your phone number" required name="number-2" type="number">
+									</div>
+									<div class="form-questions__line form-questions__line_big">
+										<label class="form-questions__label" for="message-2">Message*</label>
+										<textarea class="form-questions__textarea" name="message-2" required placeholder="Your message" id="message-2"></textarea>
+									</div>
+								</div>
+								<div class="form-questions__footer">
+									<div class="form-questions__line checkbox-form-questions">
+										<input class="checkbox-form-questions__input" required type="checkbox" value="yes" name="agree" id="agree">
+										<label class="checkbox-form-questions__label" for="agree">I agree to receive communications from Createx Online School I agree to receive communications from Createx Online School I agree to receive
+											communications from Createx Online School</label>
+									</div>
+									<button class="form-questions__button button" type="submit"><span>Send message</span></button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+</body>
+
+</html>

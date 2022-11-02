@@ -1,0 +1,610 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap);
+
+body {
+	font-family: Lato;
+	color: #424551;
+	background-color: white;
+}
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	overflow: hidden;
+}
+
+[class*="__container"] {
+	max-width: 1260px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.wrapper>main {
+	flex: 1 1 auto;
+}
+
+/*==============================================Header============================================================*/
+
+.header {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	background-color: transparent;
+}
+
+.header__container {
+	display: flex;
+	align-items: center;
+	column-gap: 60px;
+	min-height: 92px;
+
+}
+
+.header__logo {}
+
+
+.header__menu {
+	flex: 1 1 auto;
+}
+
+.menu {}
+
+.menu__body {}
+
+.menu__list {
+	display: flex;
+	column-gap: 40px;
+	row-gap: 10px;
+	flex-wrap: wrap;
+}
+
+.menu__item {}
+
+.menu__link {
+	position: relative;
+	line-height: 160%;
+	font-weight: 700;
+	transition: color 0.3s ease 0s;
+}
+
+
+.menu__link::before {
+	content: "";
+	display: inline-block;
+	margin-bottom: -5px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 2px;
+	background-color: #FF3F3A;
+	transition: all 0.4s ease 0s, opacity 0.5s ease 0s;
+	opacity: 0;
+}
+
+.menu__link:hover::before {
+	content: "";
+	width: 100%;
+	opacity: 1;
+}
+
+.header__actions {}
+
+.actions {
+	display: flex;
+	column-gap: 37px;
+	align-items: center;
+	flex-shrink: 0;
+}
+
+.actions__button {}
+
+.user {
+	line-height: 1.3;
+	font-weight: 700;
+	padding-left: 25px;
+	background: url(../img/icons/user-icon.svg) left no-repeat;
+}
+
+.user__login {}
+
+.user__login span:hover {
+	text-decoration: underline;
+}
+
+.user__register {}
+
+.user__register span:hover {
+	text-decoration: underline;
+}
+
+
+/*==============================================Practice-form==========================================================*/
+
+
+.form-practice {}
+
+.form-practice__container {}
+
+.form-practice__title:not(:last-child) {
+	margin-bottom: 30px;
+
+}
+
+.label-name {
+	font-weight: 700;
+}
+
+.form-practice__form {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+
+}
+
+.form__line {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.form__line span {
+	color: red;
+}
+
+.form__label {}
+
+
+.form__input:focus {
+	box-shadow: 0px 80px 80px -20px rgba(255, 63, 58, 0.08), 0px 30px 24px -10px rgba(255, 63, 58, 0.05), 0px 12px 10px -6px rgba(255, 63, 58, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+	outline: 1px solid rgba(255, 63, 58, 0.4);
+}
+
+.form__input, .form__area::placeholder {
+	color: #9A9CA5;
+	line-height: 1.5;
+	font-size: 12px;
+}
+
+.form__input {
+	height: 44px;
+	padding: 0 12px;
+	border-radius: 5px;
+	outline: 1px solid #D7DADD;
+	color: #424551;
+}
+
+
+/*==============select ====================================*/
+.form__select {
+	height: 30px;
+	border-radius: 5px;
+	padding-left: 15px;
+	outline: 1px solid #D7DADD;
+}
+
+.form__select:focus {
+	box-shadow: 0px 80px 80px -20px rgba(255, 63, 58, 0.08), 0px 30px 24px -10px rgba(255, 63, 58, 0.05), 0px 12px 10px -6px rgba(255, 63, 58, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+	outline: 1px solid rgba(255, 63, 58, 0.4);
+}
+
+
+
+/*==============radio ====================================*/
+
+.form__radio {}
+
+.radio {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.radio__title {}
+
+.label-name {}
+
+.radio__line {
+	position: relative;
+}
+
+.radio__input {
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+.radio__label {
+	display: inline-flex;
+	gap: 5px;
+	cursor: pointer;
+	position: relative;
+}
+
+.radio__input:focus+.radio__label::before {
+	box-shadow: 0 0 10px #e36763;
+}
+
+.radio__input:checked+.radio__label::before {
+	outline: 2px solid #FF3F3A;
+}
+
+.radio__input:checked+.radio__label::after {
+	transition: transform 0.5s ease 0s;
+	transform: scale(1);
+}
+
+.radio__label::before {
+	content: "";
+	flex: 0 0 17px;
+	width: 17px;
+	height: 17px;
+	border-radius: 50%;
+	outline: 2px solid #B3B7BC;
+}
+
+.radio__label::after {
+	content: "";
+	position: absolute;
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
+	background-color: #FF3F3A;
+	top: 4px;
+	left: 4px;
+	transform: scale(0);
+}
+
+.radio__text {}
+
+
+/*==============checkbox====================================*/
+
+.form__checkbox {}
+
+.checkbox {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.checkbox__title {}
+
+.checkbox__line {
+	position: relative;
+}
+
+.checkbox__input {
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+
+}
+
+.checkbox__input:focus+.checkbox__label::before {
+	box-shadow: 0 0 10px #e36763;
+}
+
+
+
+.checkbox__input:checked+.checkbox__label::before {
+	background: url(../img/questions/check-1.svg) center no-repeat;
+	background-color: #FF3F3A;
+	outline: none;
+}
+
+
+.checkbox__label {
+	display: inline-flex;
+	gap: 5px;
+	cursor: pointer;
+	align-items: center;
+}
+
+.checkbox__label::before {
+	content: "";
+	flex: 0 0 16px;
+	align-self: flex-start;
+	width: 16px;
+	height: 16px;
+	outline: 1px solid #B3B7BC;
+	background: #FFFFFF;
+	border-radius: 3px;
+
+}
+
+.checkbox__text {}
+
+/*==============form__area====================================*/
+
+.form__area {
+	outline: 1px solid #D7DADD;
+	padding: 15px;
+	resize: vertical;
+	min-height: 150px;
+	max-height: 150px;
+	width: 70%;
+}
+
+.form__area::placeholder {
+	font-size: 12px;
+}
+
+.form__area:focus {
+	box-shadow: 0px 80px 80px -20px rgba(255, 63, 58, 0.08), 0px 30px 24px -10px rgba(255, 63, 58, 0.05), 0px 12px 10px -6px rgba(255, 63, 58, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+	outline: 1px solid rgba(255, 63, 58, 0.4);
+}
+
+/*==============switcher====================================*/
+
+
+
+.switcher {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	position: relative;
+}
+
+.switcher__input {
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.switcher__input:focus+.switcher__label {
+	box-shadow: 0 0 10px #e36763;
+}
+
+.switcher__input:checked+.switcher__label::before {
+	left: 52%;
+}
+
+.switcher__input:checked+.switcher__label {
+	background-color: #FF3F3A;
+}
+
+
+
+.switcher__label {
+	transition: background-color 0.3s ease 0s;
+	width: 24px;
+	height: 12px;
+	border-radius: 5px;
+	position: relative;
+	cursor: pointer;
+	background-color: #B3B7BC;
+}
+
+.switcher__label::before {
+	content: "";
+	position: absolute;
+	transition: transform, left 0.5s ease 0s;
+	top: 50%;
+	transform: translate(0, -50%);
+	left: 0;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: white;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+}
+
+/*==============File====================================*/
+
+.file {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 10px;
+	position: relative;
+
+}
+
+.file__input {
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	font-size: 0;
+}
+
+.file__label {
+	font-weight: 400;
+	cursor: pointer;
+	background-color: inherit;
+	padding: 10px;
+	outline: 1px solid #D7DADD;
+}
+
+
+.file__input:focus+.file__label {
+	box-shadow: 0px 80px 80px -20px rgba(255, 63, 58, 0.08), 0px 30px 24px -10px rgba(255, 63, 58, 0.05), 0px 12px 10px -6px rgba(255, 63, 58, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+	outline: 1px solid rgba(255, 63, 58, 0.4);
+}
+
+.form__button {
+	align-self: flex-start;
+}
+
+
+/*=====================================================questions====================================*/
+
+.questions {}
+
+.questions__container {}
+
+.questions__body {
+	display: flex;
+	justify-content: space-between;
+	column-gap: 20px;
+}
+
+.questions__image {
+	flex: 0 1 435px;
+	align-self: center;
+}
+
+.questions__image img {
+	max-width: 100%;
+}
+
+.questions__content {
+	flex: 0 1 705px;
+}
+
+.questions__title {
+	text-align: left;
+}
+
+.questions__title:not(:last-child) {
+	margin-bottom: 40px;
+}
+
+.questions-form {}
+
+.form-questions {}
+
+.form-questions__block-inputs {
+	display: flex;
+	gap: 25px;
+	flex-wrap: wrap;
+}
+
+.form-questions__block-inputs:not(:last-child) {
+	margin-bottom: 48px;
+
+}
+
+.form-questions__line {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	min-width: 250px;
+	gap: 10px;
+
+}
+
+.form-questions__line_big {
+	flex: 1 1 100%;
+}
+
+.form-questions__label {
+	line-height: 160%;
+	color: #424551;
+}
+
+.form-questions__input:focus {
+	box-shadow: 0px 80px 80px -20px rgba(255, 63, 58, 0.08), 0px 30px 24px -10px rgba(255, 63, 58, 0.05), 0px 12px 10px -6px rgba(255, 63, 58, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+	outline: 1px solid rgba(255, 63, 58, 0.4);
+}
+
+.form-questions__input::placeholder {
+	color: #9A9CA5;
+}
+
+.form-questions__input {
+	height: 52px;
+	background-color: #FFFFFF;
+	outline: 1px solid #D7DADD;
+	border-radius: 4px;
+	padding: 0 16px;
+	color: #424551;
+}
+
+.form-questions__textarea {
+	color: #424551;
+	background-color: #FFFFFF;
+	outline: 1px solid #D7DADD;
+	min-height: 128px;
+	border-radius: 4px;
+	padding: 15px;
+	width: 100%;
+	resize: vertical;
+}
+
+
+.form-questions__textarea::placeholder {
+	color: #9A9CA5;
+}
+
+
+.form-questions__textarea:focus {
+	box-shadow: 0px 80px 80px -20px rgba(255, 63, 58, 0.08), 0px 30px 24px -10px rgba(255, 63, 58, 0.05), 0px 12px 10px -6px rgba(255, 63, 58, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+	outline: 1px solid rgba(255, 63, 58, 0.4);
+}
+
+.form-questions__footer {
+	display: flex;
+	justify-content: space-between;
+	gap: 15px 50px;
+	flex-wrap: wrap;
+}
+
+
+.checkbox-form-questions {
+	position: relative;
+	line-height: 160%;
+	flex: 1 0 315px;
+	flex-direction: column;
+}
+
+.checkbox-form-questions__input {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+	opacity: 0;
+
+}
+
+.checkbox-form-questions__input:focus+.checkbox-form-questions__label::before {
+	box-shadow: 0 0 10px #e36763;
+}
+
+
+.checkbox-form-questions__input:checked+.checkbox-form-questions__label::before {
+	background: url(../img/questions/check-1.svg) center no-repeat;
+	background-color: #FF3F3A;
+	outline: none;
+}
+
+
+.checkbox-form-questions__label {
+	display: inline-flex;
+	gap: 12px;
+	cursor: pointer;
+	align-items: center;
+	color: #424551;
+}
+
+.checkbox-form-questions__label::before {
+	content: "";
+	flex: 0 0 16px;
+	align-self: flex-start;
+	transform: translateY(5px);
+	width: 16px;
+	height: 16px;
+	outline: 1px solid #B3B7BC;
+	background: #FFFFFF;
+	border-radius: 3px;
+
+}
+
+.form-questions__button {
+	flex: 1 1 auto;
+	align-self: flex-start;
+}
