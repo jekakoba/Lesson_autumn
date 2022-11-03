@@ -67,8 +67,8 @@
 								<input id="phone-1" class="form__input" required placeholder="Введіть номер телефону" type="number" name="number-phone">
 							</div>
 							<div class="form__line">
-								<label class="form__label label-name" for="city">Виберіть своє місто</label>
-								<select class="form__select" name="cities" id="city">
+								<label class="form__label label-name" for="cities">Виберіть своє місто</label>
+								<select class="form__select" name="city" id="cities">
 									<option value="Kyiv">Київ</option>
 									<option value="Odesa">Одеса</option>
 									<option selected value="Mykolayiv">Миколаїв</option>
@@ -80,13 +80,13 @@
 								<div class="radio">
 									<p class="radio__title label-name">Ваша стать <span>*</span></p>
 									<div class="radio__line">
-										<input class="radio__input" checked required type="radio" name="gender" id="woman">
-										<label class="radio__label" for="woman">Чоловіча
+										<input class="radio__input" checked required type="radio" value="male" name="gender" id="male">
+										<label class="radio__label" for="male">Чоловіча
 										</label>
 									</div>
 									<div class="radio__line">
-										<input class="radio__input" type="radio" name="gender" id="male">
-										<label class="radio__label" for="male">Жіноча</label>
+										<input class="radio__input" type="radio" value="female" name="gender" id="female">
+										<label class="radio__label" for="female">Жіноча</label>
 									</div>
 								</div>
 							</div>
@@ -98,20 +98,20 @@
 										<label class="checkbox__label" for="reading">Література</label>
 									</div>
 									<div class="checkbox__line">
-										<input class="checkbox__input" type="checkbox" value="yes" name="Travel" id="Travel">
-										<label class="checkbox__label" for="Travel">Подорожі</label>
+										<input class="checkbox__input" type="checkbox" value="yes" name="travel" id="travel">
+										<label class="checkbox__label" for="travel">Подорожі</label>
 									</div>
 									<div class="checkbox__line">
-										<input class="checkbox__input" type="checkbox" value="yes" name="Sport" id="Sport">
-										<label class="checkbox__label" for="Sport">Спорт</label>
+										<input class="checkbox__input" type="checkbox" value="yes" name="sport" id="tport">
+										<label class="checkbox__label" for="sport">Спорт</label>
 									</div>
 									<div class="checkbox__line">
 										<input class="checkbox__input" type="checkbox" value="yes" name="music" id="music">
 										<label class="checkbox__label" for="music">Музика</label>
 									</div>
 									<div class="checkbox__line">
-										<input class="checkbox__input" type="checkbox" value="yes" name="Fishing" id="Fishing">
-										<label class="checkbox__label" for="Fishing">Рибалка</label>
+										<input class="checkbox__input" type="checkbox" value="yes" name="fishing" id="fishing">
+										<label class="checkbox__label" for="fishing">Рибалка</label>
 									</div>
 								</div>
 							</div>
