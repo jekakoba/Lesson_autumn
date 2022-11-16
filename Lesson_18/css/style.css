@@ -307,6 +307,7 @@ body {
 
 .main-block__content {
 	align-self: center;
+	max-width:496px;
 }
 
 @media (max-width:767.98px) {
