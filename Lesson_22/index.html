@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/null.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 22</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				JavaScript
+			</div>
+		</header>
+		<main class="page">
+			<div class="block">
+				<div class="block__container">
+					<div class="block__header header-block">
+						<h2 class="header-block__title">Основи синтаксису</h2>
+						<a target="_blank" href="https://www.youtube.com/watch?v=uOeFpp872MY" class="header-block__link">Відеоурок</a>
+					</div>
+					<div class="block__content content-block">
+						<h3 class="content-block__variant">Варіант #1</h3>
+						<div class="content-block__description">
+							<p>
+								<span class="green">Помилку не викличе,</span> але треба взяти за звичку після кожної інструкції ставити <mark>;</mark> щоб в деяких випадках не було проблем
+							</p>
+						</div>
+						<h3 class="content-block__variant">Варіант #2</h3>
+						<div class="content-block__description">
+							<p><span class="green">Помилку не викличе,</span> так як нова інструкція починається з нового рядка. Але все рівно треба взяти за правило ставити <mark>;</mark> після кожної інструкції :)
+							</p>
+						</div>
+
+						<h3 class="content-block__variant">Варіант #3</h3>
+						<div class="content-block__description">
+							<p>
+								<span class="red">ПОМИЛКА!</span> Дві інструкції розташовані <mark>в одному рядку не розділеними крапкою з комою</mark>
+							</p>
+						</div>
+						<h3 class="content-block__variant">Варіант #4</h3>
+						<div class="content-block__description">
+							<p>
+								<span class="red">ПОМИЛКА</span> Рядок <mark>Вчимо</mark> без однієї лапки:).
+							</p>
+							<p>
+								Все ВІДКРИТЕ повино бути ЗАКРИТИМ
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="block">
+				<div class="block__container">
+					<div class="block__header header-block">
+						<h2 class="header-block__title">Змінні та константи</h2>
+						<a target="_blank" href="https://www.youtube.com/watch?v=5V8IeATHr4w" class="header-block__link">Відеоурок</a>
+					</div>
+					<div class="block__content content-block">
+						<h3 class="content-block__variant">Варіант #1</h3>
+						<div class="content-block__description">
+							<p>
+								<span class="red">ПОМИЛКА! </span> Дві змінні розташовані в одному рядку не розділених крапкою з комою
+							</p>
+						</div>
+						<h3 class="content-block__variant">Варіант #2</h3>
+						<div class="content-block__description">
+							<p>
+								<mark>Помилки не буде,</mark> але прийнято писати ім'я змінних в стилі <span class="green">lowerCamleCase</span>
+							</p>
+						</div>
+						<h3 class="content-block__variant">Варіант #3</h3>
+						<div class="content-block__description">
+							<p>
+								<mark>Все працювати буде,</mark> але назва консанти написана в спеціальному стилі, значення якої відомі відразу. В нашому випадку це вираз, тому треба було записати так:
+							</p>
+							<p>
+								<span class="green">const blockSize = 14+50;</span>
+							</p>
+						</div>
+						<h3 class="content-block__variant">Варіант #4</h3>
+						<div class="content-block__description">
+							<p>
+								<span class="green">ВІРНО!</span> Назва консанти написана в спеціальному стилі, значення якої відомі відразу. Висота блоку — 100.
+							</p>
+						</div>
+						<h3 class="content-block__variant">Варіант #5</h3>
+						<div class="content-block__description">
+							<p>
+								<span class="green">ВІРНО!</span> Змінну <mark>size</mark> буде видно за межами js-блоку, так як змінна оголошена за допомогою ключового слова <mark>var.</mark>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="block">
+				<div class="block__container">
+					<div class="block__header header-block">
+						<h2 class="header-block__title">Типи даних</h2>
+						<a target="_blank" href="https://www.youtube.com/watch?v=g7jDucodUzQ" class="header-block__link">Відеоурок</a>
+					</div>
+					<div class="block__content content-block">
+						<h3 class="content-block__variant">Варіант #1</h3>
+						<div class="content-block__description">
+							<p>
+								<mark>Помилики немає,</mark> але якщо треба буде вивести значення змінної userAge, то потрібно буде скористатися зворотніми лапками <mark>(``)</mark>
+							</p>
+						</div>
+						<h3 class="content-block__variant">Варіант #2</h3>
+						<div class="content-block__description">
+							<p>
+								<span class="red">ПОМИЛКА!</span>. Повернеться Infinity, так як ділення на нуль дасть безкінечність
+							</p>
+						</div>
+						<h3 class="content-block__variant">Варіант #3</h3>
+						<div class="content-block__description">
+							<p>
+								<span class="red">ПОМИЛКА!</span>. Змінній <mark>userName</mark> не присвоєно ніякого значення, тому тип даних буде <mark>не Null,</mark> а <span class="green">undefined</span>
+							</p>
+						</div>
+						<h3 class="content-block__variant">Варіант #4</h3>
+						<div class="content-block__description">
+							<p>
+								<span class="green">ВІРНО!</span> Ділення переводить рядковий тип даних в числовий, але якщо в ньому дійсно є число.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+
+	<script src="js/script.js"></script>
+</body>
+
+</html>
