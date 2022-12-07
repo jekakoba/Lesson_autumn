@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/null.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 24</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				JavaScript
+			</div>
+		</header>
+		<main class="page">
+			<div class="block">
+				<div class="block__container">
+					<div class="block__header header-block">
+						<h2 class="header-block__title">Функції</h2>
+						<a target="_blank" href="https://www.youtube.com/watch?v=6cKoB5ijaGA&list=PLM6XATa8CAG7DDIBjNVd78Fv5Ueo930IV&index=13" class="header-block__link">Відеоурок</a>
+					</div>
+					<div class="block__content content-block">
+						<h3 class="content-block__variant">Задача #1</h3>
+						<div class="content-block__description">
+							Микола перший потрапить в консоль, так як ми напряму викликаємо його через консоль, в той час як у Василя затримка (і неважливо, що 0)
+						</div>
+						<h3 class="content-block__variant">Задача #2</h3>
+						<div class="content-block__description">
+							<span class="green">Правильно!</span> Function Declaration дозволяє викликати функцію з будь якого місця коду
+						</div>
+						<h3 class="content-block__variant">Задача #3</h3>
+						<div class="content-block__description">
+							<span class="red">Неправильно!</span> Коли ми будуємо функціональний вираз, то не можемо викликати його <mark>ДО</mark> його створення, тільки <mark>ПІСЛЯ</mark>
+						</div>
+						<h3 class="content-block__variant">Задача #4</h3>
+						<div class="content-block__description">
+							В строгому режимі ми не можемо викликати функцію, якщо вона знаходиться в якомусь js блоці. Її не буде видно за її межами. Тут на поміч нам йде функціональний вираз.
+							<ol>
+								<li>Оголошуємо змінну за межами js блоку Оголошуємо змінну за межами js блок </li>
+								<li>Всередині js блоку привласнюємо цій змінній функцію</li>
+								<li>Радіємо, що зможемо тепер визивати цю фінкцію з будь-якого місця коду</li>
+							</ol>
+							<img src="img/Screenshot_2.jpg" alt="scrin">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="block">
+				<div class="block__container">
+					<div class="block__header header-block">
+						<h2 class="header-block__title">Масиви</h2>
+						<a target="_blank" href="https://www.youtube.com/watch?v=GULFKAX0nxY&list=PLM6XATa8CAG7DDIBjNVd78Fv5Ueo930IV&index=17" class="header-block__link">Відеоурок</a>
+					</div>
+					<div class="block__content content-block">
+						<h3 class="content-block__variant">Задача #1</h3>
+						<div class="content-block__description">
+							Довжина масиву — 4. За допомогою методу push добавили ще один елемент до масиву.
+							<img src="img/Screenshot_9.jpg" alt="scrin">
+						</div>
+						<h3 class="content-block__variant">Задача #2</h3>
+						<div class="content-block__description">
+							<img src="img/Screenshot_3.jpg" alt="scrin">
+						</div>
+						<h3 class="content-block__variant">Задачі #3,4</h3>
+						<div class="content-block__description">
+							<img src="img/Screenshot_10.jpg" alt="scrin">
+						</div>
+						<h3 class="content-block__variant">Задача #5</h3>
+						<img src="img/Screenshot_8.jpg" alt="scrin">
+						<div class="content-block__description">
+							Змінної <mark>arrTwo </mark> не існує, буде помилка.
+							Якщо б все було гаразд, то previousValue — 9, так як ми не вказали початкового значення, то воно буде дорівнювати першому елементу масиву
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="block">
+				<div class="block__container">
+					<div class="block__header header-block">
+						<h2 class="header-block__title">Document object model (DOM)</h2>
+						<h3 class="header-block__title"><mark>(Задачі в js файлі)</mark></h3>
+						<a target="_blank" href="https://www.youtube.com/watch?v=DuWyc76lYC4&list=PLM6XATa8CAG7DDIBjNVd78Fv5Ueo930IV&index=18" class="header-block__link">Відеоурок</a>
+					</div>
+					<div class="block__content content-block">
+						<h3 class="content-block__variant">Задача #1</h3>
+						<div class="content-block__description">
+							<img src="img/Screenshot_14.jpg" alt="scrin">
+							<div data-say-hi="yes">
+								Привіт!
+							</div>
+
+						</div>
+						<h3 class="content-block__variant">Задача #2</h3>
+						<div class="content-block__description">
+							<img src="img/Screenshot_15.jpg" alt="scrin">
+							<ul>
+								<li>Корчі</li>
+								<li>Йончі</li>
+							</ul>
+						</div>
+						<h3 class="content-block__variant">Задача #3</h3>
+						<div class="content-block__description">
+							<div class="like"></div>
+							<div class="subscribe"></div>
+							<div class="like subscribe"></div>
+							<img src="img/Screenshot_16.jpg" alt="scrin">
+						</div>
+						<h3 class="content-block__variant">Задача #4</h3>
+						<div class="content-block__description">
+							<img src="img/Screenshot_17.jpg" alt="scrin">
+							<p>
+								В данному прикладі ми отримаємо помилку, так як треба використовувати
+								querySelector, а не querySelectorAll. Тоді елемент добавиться в <mark>кінець</mark> списка ul
+							</p>
+							<ul class="listTwo">
+								<li>Пункт 1</li>
+								<li>Пункт 2</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="block">
+				<div class="block__container">
+					<div class="block__header header-block">
+						<h2 class="header-block__title">Розмір прокрутки, координати елементів на сторінці та вікна браузера</h2>
+
+						<a target="_blank" href="https://www.youtube.com/watch?v=TEeKr2ON66A&list=PLM6XATa8CAG7DDIBjNVd78Fv5Ueo930IV&index=19&ab_channel=%D0%A4%D1%80%D1%96%D0%BB%D0%B0%D0%BD%D1%81%D0%B5%D1%80%D0%BF%D0%BE%D0%B6%D0%B8%D1%82%D1%82%D1%8E"
+							class="header-block__link">Відеоурок</a>
+					</div>
+					<div class="block__content content-block">
+						<h3 class="content-block__variant">Задача #1</h3>
+						<div class="content-block__description">
+							<img src="img/Screenshot_5.jpg" alt="scrin">
+						</div>
+						<h3 class="content-block__variant">Задача #2</h3>
+						<div class="content-block__description">
+							<img src="img/Screenshot_6.jpg" alt="scrin">
+						</div>
+						<h3 class="content-block__variant">Задача #3</h3>
+						<div class="content-block__element element element_first">
+							<h4 class="element__title">Елемент 1</h4>
+							<div class="element__body"></div>
+						</div>
+						<div class="content-block__element element element_second">
+							<h4 class="element__title">Елемент 2</h4>
+							<div class="element__body"></div>
+						</div>
+						<div class="content-block__element element element_third">
+							<h4 class="element__title">Елемент 3</h4>
+							<div class="element__body"></div>
+						</div>
+						<div class="content-block__description">
+							<img src="img/Screenshot_7.jpg" alt="scrin">
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
