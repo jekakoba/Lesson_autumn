@@ -3,7 +3,6 @@
 
 const cat = document.querySelector('.cat');
 const formLine = document.querySelector('.form__line');
-const form = document.querySelector('.form');
 const formSearchButton = document.querySelector('.form__search');
 
 
